@@ -1,0 +1,39 @@
+// altsrvcli.idl : IDL source for altsrvcli
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (altsrvcli.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(55A483B1-89FC-4FA2-BA0A-B34512C16948),
+	dual,
+	nonextensible,
+	helpstring("ITestFunc Interface"),
+	pointer_default(unique)
+]
+interface ITestFunc : IDispatch{
+    [id(1), helpstring("method test001")] HRESULT test001(LONG p1, CHAR* p2);
+    [id(2), helpstring("method test002")] HRESULT test002(BSTR* p1, LONG p2);
+    [id(3), helpstring("method test003")] HRESULT test003(LONG p1, LONG p2, IUnknown** p3, CHAR* p4, IDispatch** p5);
+};
+[
+	uuid(AFAF6BCA-D5EF-497C-B263-C8F70FFEB92F),
+	version(1.0),
+	helpstring("altsrvcli 1.0 Type Library")
+]
+library altsrvcliLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(BE3C26E1-AF4F-45A0-9674-869756027969),
+		helpstring("TestFunc Class")
+	]
+	coclass TestFunc
+	{
+		[default] interface ITestFunc;
+	};
+};

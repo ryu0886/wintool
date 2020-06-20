@@ -1,0 +1,26 @@
+HKCR
+{
+	altsrvcli.TestFunc.1 = s 'TestFunc Class'
+	{
+		CLSID = s '{BE3C26E1-AF4F-45A0-9674-869756027969}'
+	}
+	altsrvcli.TestFunc = s 'TestFunc Class'
+	{
+		CLSID = s '{BE3C26E1-AF4F-45A0-9674-869756027969}'
+		CurVer = s 'altsrvcli.TestFunc.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {BE3C26E1-AF4F-45A0-9674-869756027969} = s 'TestFunc Class'
+		{
+			ProgID = s 'altsrvcli.TestFunc.1'
+			VersionIndependentProgID = s 'altsrvcli.TestFunc'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{AFAF6BCA-D5EF-497C-B263-C8F70FFEB92F}'
+		}
+	}
+}

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "altsrvcli", "altsrvcli\altsrvcli.vcproj", "{8725505D-2DCF-4AB2-B542-D08BBF4AF121}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "altsrvcliPS", "altsrvcli\altsrvcliPS.vcproj", "{26F93FFC-B91B-409D-BC0A-476354321751}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8725505D-2DCF-4AB2-B542-D08BBF4AF121} = {8725505D-2DCF-4AB2-B542-D08BBF4AF121}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8725505D-2DCF-4AB2-B542-D08BBF4AF121}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8725505D-2DCF-4AB2-B542-D08BBF4AF121}.Debug|Win32.Build.0 = Debug|Win32
+		{8725505D-2DCF-4AB2-B542-D08BBF4AF121}.Release|Win32.ActiveCfg = Release|Win32
+		{8725505D-2DCF-4AB2-B542-D08BBF4AF121}.Release|Win32.Build.0 = Release|Win32
+		{26F93FFC-B91B-409D-BC0A-476354321751}.Debug|Win32.ActiveCfg = Debug|Win32
+		{26F93FFC-B91B-409D-BC0A-476354321751}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
