@@ -1,1 +1,2 @@
 # wintool
+- altsrvcli: hello world
